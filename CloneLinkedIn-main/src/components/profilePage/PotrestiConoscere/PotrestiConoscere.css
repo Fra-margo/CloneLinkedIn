@@ -1,0 +1,31 @@
+.potrestiConoscere {
+    border-radius: 10px;
+    border: 1px solid #e0dfdb;
+    width: 300px;
+    color: #1e1e1e;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    margin-bottom: 10px;
+    background-color: white;
+}
+.second {
+    color: #666666;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    margin: 10px 0;
+    
+}
+.potrestiConoscere h2 {
+    font-size: 1em;
+    font-weight: 600;
+}
+.potrestiConoscere h2:first-of-type {
+    margin-top: 20px;
+}
+
+.potrestiConoscere h3 {
+    font-size: 1.3em;
+    font-weight: 600;
+    margin: 0;
+}

@@ -1,0 +1,68 @@
+.profilePage {
+    width: 100%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.profilePageLeft {
+    animation: homepageLeft 0.3s ease-in-out;
+}
+
+@keyframes homepageLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+  
+}
+
+.profilePageRight {
+    display: none;
+    animation: homepageRight 0.3s ease-in-out;
+}
+
+@keyframes homepageRight {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+  
+}
+
+@media screen and (min-width:576px) {
+    .profilePage {
+        max-width: 576px;
+    }
+}
+
+@media screen and (min-width:768px) {
+    .profilePage {
+        max-width: 740px;
+    }
+    .profilePageRight {
+        display: block;
+    }
+    .profilePageLeft {
+        margin-right: 10px;
+    }
+}
+
+@media screen and (min-width:992px) {
+    .profilePage {
+        max-width: 962px;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .profilePage {
+        max-width: 1100px;
+    }
+}

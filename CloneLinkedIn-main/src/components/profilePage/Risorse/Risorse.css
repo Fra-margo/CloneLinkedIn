@@ -1,0 +1,70 @@
+.FirstDiv {
+    width: 100%;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border: 1px solid #e0dfdb;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: white;
+    box-sizing: border-box;
+  }
+  .SecondDiv1 {
+    width: 100%;
+    padding-left:15px;
+    box-sizing: border-box;
+  }
+  .ThiDiv {
+    width: 100%;
+    border-top: 1px solid #e0dfdb;
+  }
+  .FirstDiv h3 {
+      margin: 10px;
+      display: flex;
+      align-items: center;
+  }
+  .FirstDiv h3 i {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+  }
+  .FirstDiv .showMoreSectAnalysis:nth-of-type(1){
+    cursor: pointer;
+    color: rgba(0,0,0,0.5);
+    font-size: 0.8em;
+  }
+  .FirstDiv svg {
+    vertical-align: bottom;
+    margin-right: 10px;
+  }
+  .FirstDiv p:nth-of-type(1){
+      color: #e0dfdb;
+  }
+  .FirstDiv p:nth-of-type(2),.FirstDiv p:nth-of-type(4){
+      font-weight: 600;
+  }
+
+  .FirstDiv h2 {
+    margin: 10px 10px 10px 0;
+  }
+ 
+  .FirstDiv button{
+    border: none;
+    background-color: #e0dfdb;
+    width: 30px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .spaceP{
+    margin-left: 3% ;
+  }
+.hrDiv{
+    height: 1px;
+    background-color: #e0dfdb;
+    width: 96%;
+    
+}

@@ -1,0 +1,99 @@
+.job-card {
+    display: flex;
+    position: relative;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    cursor: pointer;
+    
+  }
+  .centerOptimizer{
+    display: flex;
+  }
+  
+  .job-logo {
+    display: flex;
+    
+    justify-content: center;
+    margin-right: 15px;
+    
+  }
+
+  .job-logo img{
+    width: 70px;
+    height: 70px;
+
+  }
+  
+  .job-info h2, .job-info h3, .job-info p {
+    margin: 0;
+    
+  }
+
+  .job-info img {
+    border-radius: 50%;
+  }
+  
+  .job-info h2 {
+    color: #0077b5;
+    font-size: 1.2em;
+  }
+  
+  .job-info h3 {
+    color: #666;
+    font-size: 1em;
+  }
+  
+  .job-info p {
+    color: #999;
+    font-size: 0.8em;
+    display: flex;
+    align-items: center;
+  }
+  
+  .job-match {
+    margin-top: 10px;
+    color: #555;
+    font-size: 0.8em;
+  }
+  
+  .job-action button {
+    background-color: #4CAF50; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    cursor: pointer;
+    font-size: 0.8em;
+  }
+  .job-info p img{
+    width: 35px;
+    height: 35px;
+    margin-right: 5px;
+  }
+
+  .inlogo{
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+
+  }
+
+  .CloseIcon {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+
+  .CloseIcon img{
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+  }
+  
+.job-info p:last-of-type {
+  margin-top: 10px;
+}
+  

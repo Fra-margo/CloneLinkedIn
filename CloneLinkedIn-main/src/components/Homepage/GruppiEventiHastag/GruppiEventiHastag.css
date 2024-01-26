@@ -1,0 +1,34 @@
+.gruppiEventiHastag {
+    padding-top: 15px;
+    border-radius: 10px;
+    width: 100%;
+    color: #1e1e1e;
+    background: white;
+    border: 1px solid #e0dfdb;
+}
+.flexiFriend {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 1px solid #e0dfdb;
+}
+.learnMore {
+    font-size: 1em;
+    text-align: center;
+    color: #666666;
+}
+.ulList a {
+    color: #2778C9;
+}
+.ulList li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.learnMore {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+.plusDiv svg {
+    cursor: pointer;
+}

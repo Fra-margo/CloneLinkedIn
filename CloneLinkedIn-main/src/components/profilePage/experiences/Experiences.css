@@ -1,0 +1,31 @@
+.experiences {
+    border: 1px solid #e0dfdb;
+    border-radius: 10px;
+    background-color: white;
+    box-sizing: border-box;
+    padding: 25px;
+}
+
+.experiences > div:first-of-type {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.experiences h2 {
+    margin-right: 15px;
+}
+
+.newExperienceButton {
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s ease-in-out;
+}
+
+.newExperienceButton:hover {
+    transform: scale(1.1);
+}

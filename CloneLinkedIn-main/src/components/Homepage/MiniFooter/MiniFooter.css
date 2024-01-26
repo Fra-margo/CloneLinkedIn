@@ -1,0 +1,32 @@
+.miniFooter {
+    position: sticky;
+    top: 10px;
+    border-radius: 10px;
+    width: 100%;
+    color: #1e1e1e;
+}
+.miniFooterList {
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 15px;
+    
+}
+.miniFooterList p {
+    color: #666666;
+    font-size: 0.9em;
+    cursor: pointer;
+}
+.miniFooterList a {
+    color: #666666;
+    font-size: 0.9em;
+}
+.lastP {
+    text-align: center;
+    font-size: 0.9em;
+    font-weight: 600;
+}
+.lastP span {
+    font-size: 1.2em;
+    font-weight: 600;
+    color: #0a66c2;
+}

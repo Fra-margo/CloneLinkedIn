@@ -1,0 +1,66 @@
+.recommendedForYou {
+background-color: white;
+border: 1px solid #e0dfdb;
+border-radius: 10px;
+display: flex;
+flex-direction: column;
+align-items: center;
+margin: 20px 0;
+}
+.recommendedForYou p {
+    font-size: 0.8em;
+    color: #666666;
+}
+.recommendedForYou h2 {
+    font-size: 1em;
+}
+.secondRecommended {
+display: flex;
+flex-wrap: wrap;
+flex-direction: column;
+align-items: center;
+width: 95%;
+border: 1px solid #e0dfdb;
+border-radius: 10px;
+
+}
+.secondRecommended h2 {
+    font-size: 1.1em;
+    
+    
+}
+.secondRecommended p {
+    font-size: 0.9em;
+    padding-top: 10px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+.secondRecommended button {
+    background-color: white;
+    border: 1px solid #0a66c2;
+    border-radius: 100px;
+    min-width: 30px;
+    padding: 5px 10px;
+    margin: 10px 0;
+    color: #0a66c2;
+    font-weight: 600;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
+.secondRecommended svg {
+    padding-top: 30px;
+    padding-bottom: 13px;
+}
+.recommendedForYou button:hover {
+    box-shadow: inset 0 0 0 1px #0a66c2;
+    background-color: #e2f0fe;
+}
+.firstH2andP {
+    width: 95%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-top: 20px;
+    padding-bottom: 5px;
+
+}

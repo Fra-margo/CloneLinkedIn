@@ -1,0 +1,38 @@
+#offerte {
+    border: 1.5px solid #e0dfdb;
+    border-radius: 10px;
+    background-color: white;
+    padding: 30px 10px 10px 15px;
+}
+
+.lavori {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.lavori p {
+    margin-left: 10px;
+    font-size: 14px;
+}
+
+.pubblicaOfferta {
+    cursor: pointer;
+    width: 90%;
+    margin: 20px auto;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #0a66c2;
+    border-radius: 25px;
+    color: #0a66c2;
+    box-sizing: border-box;
+}
+
+.pubblicaOfferta p {
+    color: #0a66c2;
+    text-align: center;
+    font-size: 0.8em;
+    margin-left: 10px;
+}

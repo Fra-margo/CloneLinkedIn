@@ -1,0 +1,108 @@
+.editComment {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 400px;
+    height: 250px;
+    padding: 15px;
+    background-color: white;
+    border: 1px solid #e0dfdb;
+    border-radius: 10px;
+    box-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    z-index: 10;
+    animation: deleteCommentAnimation 0.3s ease-in-out forwards;
+}
+
+@keyframes deleteCommentAnimation {
+    from {
+        opacity: 0;
+        top: 15%
+    }
+    to {
+        opacity: 1;
+        top: 10%
+    }
+}
+
+.editComment > div {
+    position: relative;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.editComment > div > div {
+    display: flex;
+    align-items: center;
+}
+
+.editComment img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+.editComment form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.editComment form textarea {
+    border: none;
+    resize: none;
+    margin-bottom: 10px;
+    height: 100px;
+}
+
+.editComment form textarea:focus {
+    outline: none;
+}
+
+.publishEditCommentBtn {
+    cursor: pointer;
+    width: 110px;
+    height: 35px;
+    border-radius: 50px;
+    background-color: #0a66c2;
+    border: none;
+    font-size: 1.2em;
+    color: white;
+    transition: transform 0.15s ease-in-out;
+}
+
+.publishEditCommentBtn:hover {
+    transform: scale(1.1);
+}
+
+.publishEditCommentBtn:disabled {
+    cursor: not-allowed;
+    background-color: lightgray;
+    color: gray;
+}
+
+.publishEditCommentBtn:disabled:hover {
+    transform: none;
+}
+
+.closeEditComment {
+    opacity: 0.7;
+    cursor: pointer;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transition: opacity 0.15s linear, transform 0.15s linear;
+}
+
+.closeEditComment:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}

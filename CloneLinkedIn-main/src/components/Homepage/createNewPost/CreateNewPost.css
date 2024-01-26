@@ -1,0 +1,54 @@
+.createNewPost {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 15px;
+    background-color: white;
+    margin-bottom: 20px;
+    border: 1px solid #e0dfdb;
+    border-radius: 10px;
+}
+
+.createNewPost > div:first-of-type {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.createNewPost > div:first-of-type button {
+    cursor: pointer;
+    width: 87%;
+    margin: 0 auto;
+    border-radius: 100px;
+    border: 1px solid #b6b5b1;
+    box-sizing: border-box;
+}
+
+.createNewPost > div:first-of-type img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.newPostIcons {
+    width: 90%;
+    margin: 10px auto 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.newPostIcons > div {
+    padding: 10px 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.2s ease-in-out
+}
+
+.newPostIcons > div:hover {
+    background-color: rgb(233, 233, 233);
+}
+
+.newPostIcons > div > svg {
+    margin-right: 5px;
+}

@@ -1,0 +1,555 @@
+.custom-navbar {
+    background-color: white;
+    border: 1px solid #e0dfdb;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 70px;
+    position: sticky;
+    top:0;
+    z-index: 1000000000;
+}
+
+@media screen and (min-width: 912px) and (max-width: 1280px) {
+    .custom-navbar{
+        padding-left: 5%;
+    }    
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1400px) {
+    .custom-navbar{
+        padding-left: 8%;
+    }    
+}
+
+@media screen and (min-width: 1400px) and (max-width: 1500px){
+    .custom-navbar{
+        padding-left: 12%;
+    }    
+}
+
+
+@media screen and (min-width: 1500px) and (max-width: 1600px){
+    .custom-navbar{
+        padding-left: 14%;
+    }    
+}
+
+@media screen and (min-width: 1600px){
+    .custom-navbar{
+        padding-left: 18%;
+    }    
+}
+
+.custom-navbar>svg:first-of-type {
+    min-width: 37px;
+    min-height: 37px;
+}
+
+#logoNavSvg {
+    margin-left: 5%;
+    margin-right: 20px;
+    transition: box-shadow 0.3s ease;
+}
+
+#logoNavSvg:hover{
+    box-shadow: 0px 0px 8px 2px #0a66c275;
+}
+
+
+#boxSearchNav {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.inputSearchNav {
+    padding: 10px;
+    padding-left: 35px;
+    width: 200px;
+    height: 15px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    display: none;
+    align-items: center;
+    background-color: #edf3f8;
+    transition: width 0.2s ease-in-out;
+}
+
+.inputSearchNav:hover{
+    outline: 1px solid #0a66c2;
+}
+
+.inputSearchNav:focus {
+    width: 300px;
+    outline: 2px solid #0a66c2;
+    z-index: 10000;
+}
+
+@media screen and (max-width: 1096px){
+    .inputSearchNav:focus{
+        width: 230px;        
+    }
+}
+
+@media screen and (max-width: 1010px){
+    .inputSearchNav:focus{
+        width: 210px;        
+    }
+}
+
+
+.iconSearchNav {
+    position: absolute;
+    top: 50%;
+    left: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    display: none;
+    align-items: center;
+    z-index: 10001;
+}
+
+#navbarCustom {
+    display: none;
+}
+
+#inputSearchMobile {
+    padding: 10px;
+    padding-left: 35px;
+    width: 218px;
+    height: 16px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    align-items: center;
+    background-color: #edf3f8;
+}
+
+#inputSearchMobile:hover{
+    outline: 2px solid #0a66c2;
+}
+
+@media screen and (min-width: 371px) and (max-width: 390px){
+    #inputSearchMobile{
+        width: 235px;
+    }
+    
+}
+
+@media screen and (min-width: 390px) and (max-width: 410px){
+    #inputSearchMobile{
+        width: 252px;
+    }   
+}
+
+@media screen and (min-width: 410px) and (max-width: 440px){
+    #inputSearchMobile{
+        width: 282px;
+    }
+}
+
+@media screen and (min-width: 440px) and (max-width: 465px){
+    #inputSearchMobile{
+        width: 305px;
+    }
+}
+
+@media screen and (min-width: 465px) and (max-width: 480px){
+    #inputSearchMobile{
+        width: 330px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 503px){
+    #inputSearchMobile{
+        width: 342px;
+    }
+}
+
+@media screen and (min-width: 503px) and (max-width: 523px){
+    #inputSearchMobile{
+        width:360px;
+    }
+}
+
+@media screen and (min-width: 523px) and (max-width: 547px){
+    #inputSearchMobile{
+        width: 382px;
+    }
+}
+
+@media screen and (min-width: 547px) and (max-width: 573px){
+    #inputSearchMobile{
+        width: 407px;
+    }
+}
+
+@media screen and (min-width: 573px) and (max-width: 598px){
+    #inputSearchMobile{
+        width: 432px;
+    }
+}
+
+@media screen and (min-width: 598px) and (max-width: 624px){
+    #inputSearchMobile{
+        width: 456px;
+    }
+}
+
+@media screen and (min-width: 624px) and (max-width: 649px){
+    #inputSearchMobile{
+        width:480px;
+    }
+}
+
+@media screen and (min-width: 649px) and (max-width: 675px){
+    #inputSearchMobile{
+        width: 505px;
+    }
+}
+
+@media screen and (min-width: 675px) and (max-width: 866px){
+    #inputSearchMobile{
+        width: 533px;
+    }
+}
+
+#boxSearchMobile {
+    display: none;
+}
+
+
+
+@media screen and (min-width:675px) {
+    #navbarCustom {
+        display: flex
+    }
+}
+
+@media screen and (max-width:866px) {
+    #boxSearchMobile {
+        display: flex;
+        align-items: center;
+        position: absolute;
+        top: 0;
+        z-index: 100001;
+        height: 65px;
+        background-color: white;
+    }
+
+    #iconSearchMobile {
+        display: block;
+        position: absolute;
+        left: 10px;
+    }
+}
+
+@media screen and (min-width:867px) {
+    .inputSearchNav {
+        display: flex;
+    }
+
+    .iconSearchNav {
+        display: flex;
+    }
+
+    #boxSearchNav .divIconsNav {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1110px) {
+    #boxSearchNav {
+        margin-right: 10%;
+    }
+}
+
+.divIconsNav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+}
+
+.active{
+    border-bottom: 2px solid black;
+}
+
+.activeSvg{
+    animation: pulse-opacity 0.4s ease;
+}
+
+@keyframes pulse-opacity {
+    0%, 100% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0.5;
+    }
+  }
+
+
+.divIconsNav:hover .textIconsNav,
+.dropdown-icon:hover {
+    color: black;
+    cursor: pointer;
+}
+
+.changeColorSvg{
+    cursor: pointer;
+}
+
+.divIconsNav:hover .changeColorSvg,
+.dropdown-icon:hover .changeColorSvg {
+    fill: black;
+}
+
+.textIconsNav {
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+.NomeSectionDropdown {
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+
+.buttonDropdown {
+    cursor: pointer;
+    align-self: center;
+    width: 230px;
+    height: 25px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border-radius: 20px 20px 20px 20px;
+    background-color: transparent;
+    color: #0a66c2;
+    border: 1px solid #0a66c2;
+    font-size: 1.1em;
+    transition: background-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.buttonDropdown:hover {
+    background-color: #0a66c225;
+    box-shadow: inset 0 0 0 1px #0a66c2;
+}
+
+.linkDropdown {
+    text-decoration: none;
+    font-size: 12px;
+    margin-left: 10px;
+    color: #8d8d8d;
+    padding: 3px 0px;
+    display: block;
+}
+
+.linkDropdown:hover {
+    text-decoration: underline;
+}
+
+.titleDropdown {
+    font-weight: bold;
+    margin-left: 10px;
+    font-size: 12px;
+}
+
+.containerIconsNav {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;   
+}
+
+.customNavDropdown {
+    font-size: 13px;
+}
+
+.dropdown-icon {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.dropdown-content {
+    display: block;
+    position: absolute;
+    top: 55px;
+    right: 10px;
+    background-color: white;
+    min-width: 250px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    border-radius: 10px 0 10px 10px;
+    border: 1px solid #e0dfdb;
+    z-index: 100000;
+}
+
+.dropdownMenuTop {
+    display: flex;
+    flex-direction: column;
+}
+
+.boxDropdown {
+    display: flex;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+
+.iconsCustomMargin{
+    margin-top: 5px;
+}
+
+.bi-chevron-down {
+    margin-left: 3px;
+}
+
+#borderContainerIconsNav {
+    border-left: solid 1px #e0dfdb;
+}
+
+.firstSectionDropdown {
+    display: flex;
+    margin: 10px;
+}
+
+.firstSectionDropdown img, .firstSectionDropdown .NomeSectionDropdown {
+    cursor: pointer;
+}
+
+.textFirstSection {
+    margin-left: 10px;
+}
+
+.notAvaible {
+    padding: 15px;
+}
+
+.textNoWrap {
+    white-space: nowrap;
+}
+
+#svgMobileMenu {
+    padding: 10px;
+    border-radius: 5px;
+}
+
+#svgMobileMenu:hover {
+    background-color: #e0dfdb;
+}
+
+#boxIconMobile {
+    display: none;
+}
+
+#navbarCustomMobile {
+    display: none;
+}
+
+@media screen and (max-width: 675px) {
+    #boxIconMobile {
+        display: flex;
+        position: absolute;
+        right: 0;
+    }
+
+    #navbarCustomMobile {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: white;
+        border: 1px solid #e0dfdb;
+        flex-direction: column;
+        align-items: center;
+        z-index: 100000000;
+        transition: transform 0.5s ease-in-out;
+    }
+
+    #navbarCustomMobile.mobile-menu-open {
+        display: flex;
+    }
+
+    .mobile-menu-item {
+        padding: 15px;
+        width: 100%;
+        box-sizing: border-box;
+        border-bottom: 1px solid #e0dfdb;
+        cursor: pointer;
+        text-align: center;
+    }
+
+    .mobile-menu-item:hover {
+        background-color: #e0dfdb;
+    }
+
+    .mobile-menu-item:hover .changeColorSvg {
+        fill: black;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateY(0);
+    }
+
+    to {
+        transform: translateY(-100%);
+    }
+}
+
+.mobile-menu-open {
+    animation: slideIn 0.5s ease-in-out;
+}
+
+.mobile-menu-closed {
+    animation: slideOut 0.5s ease-in-out;
+}
+
+.dropdown-icon img {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
+
+.firstSectionDropdown img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.custom-navbar .dropdown-icon img {
+    margin-top: 5px;
+}
+
+.mobile-menu-item img {
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
+
+.borderDivMenu{
+    border-bottom: solid 1px #e0dfdb;
+    margin-bottom: 5px;
+}
+
+.borderDivMenu:first-of-type{
+    padding-bottom: 5px;
+}

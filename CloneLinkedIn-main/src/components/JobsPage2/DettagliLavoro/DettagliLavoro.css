@@ -1,0 +1,113 @@
+#contenitorePrincipale {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 20px;
+    overflow-y: scroll;
+    height: 100vh;
+    position: fixed;
+    top: 67px;
+    box-sizing: border-box;
+}
+
+.dettagliLavoroTop {
+    display: flex;
+    justify-content: space-between;
+}
+
+#tipi {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.icone {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.icone p {
+    padding-left: 15px;
+}
+
+#button1 {
+    padding: 5px 10px 5px 10px;
+    border: 1.5px solid #0a66c2;
+    border-radius: 25px;
+    margin-right: 10px;
+    background-color: #0a66c2;
+    font-size: 1.2em;
+    color: white;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+#button2 {
+    padding: 5px 10px 5px 10px;
+    border: 1.5px solid #0a66c2;
+    border-radius: 25px;
+    margin-right: 10px;
+    font-size: 1.2em;
+    background-color: white;
+    color: #0a66c2;
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out
+}
+
+#button1:hover,
+#button2:hover {
+    cursor: pointer;
+    animation: scaleButton 0.3s ease-in-out forwards,  shadowButton 0.3s ease-in-out forwards;
+}
+
+@keyframes scaleButton {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.1);
+    }
+}
+
+@keyframes shadowButton{
+    from {
+        box-shadow: 0 0 0 ;
+    }
+
+    to {
+        box-shadow: 0px 0px 8px 2px #0a66c275;
+    }
+    
+}
+
+#descrizione h2 {
+    margin-bottom: 15px;
+}
+
+#descrizione p {
+    margin-bottom: 15px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+
+#descrizione li {
+    margin-bottom: 15px;
+    list-style: inside !important;
+}
+
+.dettagliLavoroTop svg {
+    cursor: pointer;
+    transition: transform 0.2s linear
+}
+
+.dettagliLavoroTop svg:hover {
+    transform: scale(1.2);
+}
+
+@media screen and (min-width:640px){
+    #contenitorePrincipale {
+        position: sticky;
+        top: 0;
+    }
+}

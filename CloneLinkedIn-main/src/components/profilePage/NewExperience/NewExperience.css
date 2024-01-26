@@ -1,0 +1,100 @@
+.newExperience {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 740px;
+    height: 90%;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #e0dfdb;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -48%);
+    z-index: 10000;
+    animation: newExperienceAnimation 0.3s ease-in-out forwards;
+}
+
+@keyframes newExperienceAnimation {
+    from {
+        opacity: 0;
+        top: 55%
+    }
+    to {
+        opacity: 1;
+        top: 50%
+    }
+}
+
+.newExperience > div > h1 {
+    font-size: 1.5em;
+}
+
+.newExperience form {
+    height: 95%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.newExperience > div:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e0dfdb;
+}
+
+.newExperience > div:first-of-type button {
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 3px solid #e0dfdb;
+    transition: border 0.2s ease-in-out, transform 0.2s ease-in-out
+}
+
+.newExperience > div:first-of-type button:hover {
+    border: 1px solid #e0dfdb;
+    transform: scale(1.1);
+}
+
+.newExperience form > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.newExperience form input {
+    height: 30px;
+    border: 1px solid #e0dfdb;
+    border-radius: 5px;
+}
+
+.newExperience form input:focus {
+    outline: 2px solid #e0dfdb;
+}
+
+.newExperience form label {
+    margin-bottom: 5px;
+}
+
+.newExperience form button {
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    background-color: #0a66c2;
+    color: white;
+    font-weight: 600;
+    font-size: 1em;
+    align-self: center;
+    transition: transform 0.1s ease-in-out
+}
+
+.newExperience form button:hover {
+    transform: scale(1.1);
+}

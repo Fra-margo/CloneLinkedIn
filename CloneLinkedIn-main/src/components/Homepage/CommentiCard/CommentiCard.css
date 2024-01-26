@@ -1,0 +1,98 @@
+#contenitoreFotoCommento {
+    display: flex;
+    background-color: white;
+    padding: 15px 5px 5px 0;
+}
+
+#nome {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 5px;
+}
+
+#foto {
+    padding: 0 5px 0 5px;
+}
+
+#foto svg {
+    margin-top: 10px;
+}
+
+#contenitoreCommento {
+    background-color: #f2f2f2;
+    padding: 10px 5px 10px 10px;
+    width: 88%;
+    border-radius: 10px;
+    border-top-left-radius: 0;
+    position: relative;
+}
+
+#contenitoreCommento p {
+    padding-bottom: 5px;
+}
+
+#pBlu {
+    display: inline-block;
+    color: #0a66c2;
+    font-size: 0.8em;
+    cursor: pointer;
+}
+
+#pPiccolo {
+    font-size: 13px;
+    position: relative;
+    bottom: 8px;
+    padding-bottom: 0px !important;
+}
+
+#pGiorno {
+    display: flex;
+    align-items: center;
+    font-size: 0.8em;
+    color: rgba(0,0,0,0.5);
+}
+
+#consiglia {
+    background-color: white;
+    padding-left: 55px;
+    padding-bottom: 5px;
+}
+
+#consiglia p {
+    font-size: 0.8em;
+    color: rgba(0,0,0,0.5);
+}
+
+.editAndDeleteComment {
+    display: flex;
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+}
+
+.editAndDeleteComment button {
+    cursor: pointer;
+    opacity: 0.3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 21px;
+    height: 21px;
+    border: none;
+    background-color: transparent;
+    transition: opacity .15s linear, transform .15s linear;
+}
+
+.editAndDeleteComment button:hover {
+    opacity: 0.6;
+    transform: scale(1.2);
+}
+
+.editAndDeleteComment button:last-of-type {
+    margin-left: 15px;
+}
+
+#contenitoreCommento .commentText  {
+    word-wrap: break-word;
+    overflow-wrap: break-word
+}

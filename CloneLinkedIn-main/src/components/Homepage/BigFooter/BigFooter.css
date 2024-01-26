@@ -1,0 +1,156 @@
+#containerFooter1 {
+    min-width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    padding-top: 60px;
+    background: white;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 0;
+    z-index: 100002;
+    animation: footerComparsa 0.5s linear forwards;
+    max-height: 100%;
+
+}
+
+#containerFooter1 select {
+    color: #828282;
+}
+#containerFooter1 p {
+    color: #828282;
+}
+#containerFooter1 label {
+    color: #828282;
+}
+
+@keyframes footerComparsa{
+    from {
+        height: 0px;
+    }
+    to {
+        height: 300px;
+    }
+}
+
+#containerFooter1 a {
+    color: #828282;
+}
+#informazioni1 {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50vw;
+    justify-content: flex-start;
+}
+
+#informazioni1 p {
+    margin: 10px;
+    padding-right: 20px;
+    width: 162px;
+    font-size: 12px;
+    
+}
+
+#informazioni1 p a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+#privacyEcondizioni1 {
+    border: none;
+    margin-left: 5px;
+    width: 162px;
+    margin-right: 44px;
+    font-size: 12px;
+    height: 30px;
+}
+
+#informazioni22 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.DMT1 {
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.DMT1 svg {
+    padding: 5px 10px 0 0;
+}
+
+.DMT1 a {
+    font-size: 13px;
+}
+
+.DMT1 a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.DMT1 p {
+    font-size: 11px;
+}
+
+#lingua1 {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    padding: 25px 0 0 10px;
+    font-size: 12px;
+    position: relative;
+}
+#lingua1 svg {
+    position: absolute;
+    top: -35px;
+    right: -10px;
+    cursor: pointer;
+
+}
+#lingua1 svg:hover {
+    fill: red;
+}
+
+#lingue1 {
+    padding: 5px;
+    width: 200px;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+#copyright1 {
+    margin-left: 30px;
+    width: 162px;
+    font-size: 12px;
+    
+}
+.lastDiv1 {
+    background: white;
+    
+}
+.h2Holder {
+    position: relative;
+}
+.h2Holder h2 {
+    position: absolute;
+    top: -40px;
+    color:  #0a66c2 ;
+}
+.h2Holder svg {
+    position: absolute;
+    top: -32px;
+    left: 80px;
+    color:  #0a66c2 ;
+}
+
+@media screen and (max-width:991px) {
+    #containerFooter1 {
+        display: none;
+    }
+}

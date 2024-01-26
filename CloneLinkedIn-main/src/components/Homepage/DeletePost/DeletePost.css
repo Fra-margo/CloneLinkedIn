@@ -1,0 +1,73 @@
+.deletePost {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    padding: 25px;
+    background-color: rgb(255, 176, 176);
+    border: 1px solid #e0dfdb;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.1);
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    z-index: 10000;
+    animation: deletePostAnimation 0.3s ease-in-out forwards;
+}
+
+@keyframes deletePostAnimation {
+    from {
+        opacity: 0;
+        top: 15%
+    }
+    to {
+        opacity: 1;
+        top: 10%
+    }
+}
+
+.deletePost p {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.deletePost div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.deletePost div button {
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
+    font-size: 1.3em;
+    color: white;
+    border-radius: 50px;
+    transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out,
+}
+
+.deletePost div button:hover {
+    transform: scale(1.1);
+}
+
+.deletePost div button:first-of-type {
+    border: 3px solid rgba(255,255,255,0.3);
+    background-color: rgba(0,128,0,0.7);
+}
+
+.deletePost div button:first-of-type:hover {
+    background-color: rgba(0,128,0,0.9);
+}
+
+.deletePost div button:last-of-type {
+    border: 3px solid rgba(255,255,255,0.3);
+    background-color: rgba(255,0,0,0.7);
+}
+
+.deletePost div button:last-of-type:hover {
+    background-color: rgba(255,0,0,0.9);
+}

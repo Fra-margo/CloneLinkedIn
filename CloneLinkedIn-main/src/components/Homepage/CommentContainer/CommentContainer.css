@@ -1,0 +1,52 @@
+.commentsContainer, .postCommentBox {
+    animation: boxCommenti 0.3s ease-in-out forwards;
+}
+
+@keyframes boxCommenti {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.postCommentBox .postNewCommentInput {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.postCommentBox .postNewCommentInput img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.postCommentBox .postNewCommentInput form {
+    width: 82.5%;
+    display: flex;
+    justify-content: center;
+}
+
+.postCommentBox .postNewCommentInput form input {
+    width: 100%;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid #e0dfdb;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+
+.postCommentBox .postNewCommentInput form input:focus {
+    outline: 2px solid #c9c8c4;
+}
+
+.noComments {
+    font-size: 0.9em;
+    color: rgba(0,0,0,0.5);
+    margin: 15px 0 5px 0;
+}

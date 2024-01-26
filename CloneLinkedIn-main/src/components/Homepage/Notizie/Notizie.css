@@ -1,0 +1,40 @@
+#notizie {
+    border: 1.5px solid #e0dfdb;
+    border-radius: 10px;
+    background-color: white;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+#perIcona {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#notizie .ulNotizie li {
+    list-style: inside !important;
+    font-size: 12px;
+    padding-top: 5px;
+}
+
+#notizie .ulNotizie li:hover {
+    background-color: rgb(233, 227, 227);
+}
+
+#notizie .ulNotizie p {
+    padding-left: 15px;
+    
+}
+
+#notizie button {
+    border: none;
+    background-color: white;
+    margin: 10px 0 0 15px ;
+    padding: 2px;
+    border-radius: 5px;
+}
+
+#notizie button:hover {
+    background-color: rgb(233, 227, 227);
+}

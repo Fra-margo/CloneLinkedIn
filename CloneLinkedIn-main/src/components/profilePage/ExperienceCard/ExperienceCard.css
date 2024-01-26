@@ -1,0 +1,65 @@
+.experienceCard {
+    width: 100%;
+    display: flex;
+    position: relative;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #e0dfdb;
+    margin-bottom: 20px;
+}
+
+.experienceCard .experienceCardLeft {
+    width: 75px;
+}
+
+.experienceCard .experienceCardLeft img {
+    width: 100%;
+}
+
+.experienceCard .experienceCardRight {
+    width: calc(100% - 75px);
+}
+
+.experienceCardRight h2, .experienceCardRight p {
+    max-width: 80%;
+    overflow-wrap: anywhere;
+}
+
+.editAndDeleteBtns {
+    display: flex;
+    position: absolute;
+    top: -30px;
+    right: 0;
+}
+
+.editAndDeleteBtns button {
+    opacity: 0.9;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.editAndDeleteBtns button:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.editAndDeleteBtns button:first-of-type {
+    background-color: #0a66c2;
+}
+
+.editAndDeleteBtns button:last-of-type {
+    background-color: firebrick;
+}
+
+@media screen and (min-width:992px) {
+    .editAndDeleteBtns {
+        top: 0;
+    }
+}

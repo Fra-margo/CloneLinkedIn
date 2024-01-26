@@ -1,0 +1,93 @@
+.editProfileModulePage {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 740px;
+    height: 90%;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #e0dfdb;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -48%);
+    z-index: 10000;
+    animation: editProfileAnimation 0.3s ease-in-out forwards;
+}
+
+@keyframes editProfileAnimation {
+    from {
+        opacity: 0;
+        top: 55%
+    }
+    to {
+        opacity: 1;
+        top: 50%
+    }
+}
+
+.editProfileModulePage > div:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #e0dfdb;
+}
+
+.editProfileModulePage > div:first-of-type svg {
+    cursor: pointer;
+    transition: transform 0.1s ease-in-out
+}
+
+.editProfileModulePage > div:first-of-type svg:hover {
+    transform: scale(1.2);
+}
+
+.editProfileModulePage form {
+    width: 100%;
+    height: 85%;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.editProfileModulePage form .inputsDiv {
+    height: 97%;
+    box-sizing: border-box;
+    padding: 20px;
+    overflow-y: scroll;
+}
+
+.editProfileModulePage form .inputsDiv div {
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+}
+
+.editProfileModulePage form .inputsDiv div input {
+    margin-top: 5px;
+    height: 30px;
+    border: 1px solid #e0dfdb;
+    border-radius: 5px;
+}
+
+.editProfileModulePage form .editProfileButton {
+    text-align: right;
+}
+
+.editProfileModulePage form .editProfileButton button {
+    cursor: pointer;
+    margin-top: 15px;
+    width: 75px;
+    height: 30px;
+    border-radius: 50px;
+    background-color: #0a66c2;
+    border: none;
+    color: white;
+    font-weight: 600;
+    font-size: 1em;
+    transition: transform 0.1s ease-in-out
+}
+
+.editProfileModulePage form .editProfileButton button:hover {
+    transform: scale(1.05);
+}

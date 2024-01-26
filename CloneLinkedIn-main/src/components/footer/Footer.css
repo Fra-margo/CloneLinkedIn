@@ -1,0 +1,90 @@
+#containerFooter {
+    max-width: 1100px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+#informazioni {
+    display: flex;
+    flex-wrap: wrap;
+    width: 50vw;
+    justify-content: flex-start;
+}
+
+#informazioni p {
+    margin: 10px;
+    padding-right: 30px;
+    width: 162px;
+    font-size: 12px;
+}
+
+#informazioni p a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+#privacyEcondizioni {
+    border: none;
+    margin-left: 5px;
+    width: 162px;
+    margin-right: 44px;
+    font-size: 12px;
+    height: 30px;
+}
+
+#informazioni2 {
+    display: flex;
+    flex-direction: column;
+}
+
+.DMT {
+    display: flex;
+    padding-top: 5px;
+    padding-bottom: 20px;
+}
+
+.DMT svg {
+    padding: 5px 10px 0 0;
+}
+
+.DMT a {
+    font-size: 13px;
+}
+
+.DMT a:hover {
+    text-decoration: underline;
+    color: blue;
+}
+
+.DMT p {
+    font-size: 11px;
+}
+
+#lingua {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0 0 10px;
+    font-size: 12px;
+}
+
+#lingue {
+    padding: 5px;
+    width: 300px;
+    margin-top: 5px;
+    font-size: 12px;
+}
+
+#copyright {
+    margin-left: 30px;
+    width: 162px;
+    font-size: 12px;
+}
+
+@media screen and (min-width:650px) {
+    #containerFooter {
+        flex-direction: row;
+    }
+}

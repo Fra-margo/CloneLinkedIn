@@ -1,0 +1,73 @@
+.deleteComment {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 100%;
+    max-width: 400px;
+    height: 200px;
+    padding: 25px;
+    background-color: white;
+    border: 3px solid brown;
+    border-radius: 10px;
+    box-shadow: 2px 2px 3px rgba(0,0,0,0.3);
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -20%);
+    z-index: 10000;
+    animation: deleteCommentAnimation 0.3s ease-in-out forwards;
+}
+
+@keyframes deleteCommentAnimation {
+    from {
+        opacity: 0;
+        top: 15%
+    }
+    to {
+        opacity: 1;
+        top: 10%
+    }
+}
+
+.deleteComment p {
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.deleteComment div {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.deleteComment div button {
+    cursor: pointer;
+    width: 80px;
+    height: 40px;
+    font-size: 1.3em;
+    color: white;
+    border-radius: 50px;
+    transition: transform 0.15s ease-in-out, background-color 0.15s ease-in-out,
+}
+
+.deleteComment div button:hover {
+    transform: scale(1.1);
+}
+
+.deleteComment div button:first-of-type {
+    border: 3px solid rgba(255,255,255,0.3);
+    background-color: rgba(0,128,0,0.7);
+}
+
+.deleteComment div button:first-of-type:hover {
+    background-color: rgba(0,128,0,0.9);
+}
+
+.deleteComment div button:last-of-type {
+    border: 3px solid rgba(255,255,255,0.3);
+    background-color: rgba(255,0,0,0.7);
+}
+
+.deleteComment div button:last-of-type:hover {
+    background-color: rgba(255,0,0,0.9);
+}

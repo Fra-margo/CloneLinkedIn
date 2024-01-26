@@ -1,0 +1,136 @@
+.editExperience {
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 740px;
+    height: 85%;
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #e0dfdb;
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.3);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10000;
+    animation: newExperienceAnimation 0.3s ease-in-out;
+}
+
+@keyframes newExperienceAnimation {
+    from {
+        opacity: 0;
+        top: 55%
+    }
+    to {
+        opacity: 1;
+        top: 50%
+    }
+}
+
+.editExperience > div {
+    position: relative;
+}
+
+.editExperience > div > h1 {
+    font-size: 1.5em;
+}
+
+.editExperience > form {
+    position: relative;
+}
+
+.editExperience > form > .newExperienceUploadImg {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+}
+
+.inputPostPic {
+    display: none;
+}
+
+.newExperienceUploadImg label {
+    width: 60px;
+    cursor: pointer;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    transition: transform 0.2s ease-in-out;
+}
+
+.newExperienceUploadImg label:hover {
+    transform: scale(1.3);
+}
+
+.editExperience form {
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.editExperience > div:first-of-type {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid #e0dfdb;
+}
+
+.editExperience > div:first-of-type button {
+    cursor: pointer;
+    min-width: 40px;
+    min-height: 40px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 50%;
+    border: 3px solid #e0dfdb;
+    transition: border 0.2s ease-in-out, transform 0.2s ease-in-out
+}
+
+.editExperience > div:first-of-type button:hover {
+    border: 1px solid #e0dfdb;
+    transform: scale(1.1);
+}
+
+.editExperience form > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.editExperience form input {
+    height: 30px;
+    border: 1px solid #e0dfdb;
+    border-radius: 5px;
+}
+
+.editExperience form input:focus {
+    outline: 2px solid #e0dfdb;
+}
+
+.editExperience form label {
+    margin-bottom: 5px;
+}
+
+.editExperience form button {
+    cursor: pointer;
+    width: 100px;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    background-color: #0a66c2;
+    color: white;
+    font-weight: 600;
+    font-size: 1em;
+    align-self: flex-end;
+    transition: transform 0.1s ease-in-out
+}
+
+.editExperience form button:hover {
+    transform: scale(1.1);
+}

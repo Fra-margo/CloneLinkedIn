@@ -1,0 +1,39 @@
+#containerNoBootstrap {
+  box-sizing: border-box;
+  width: 300px;
+  padding: 20px;
+  display: none;
+  border: 1px solid #e0dfdb;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  background-color: white;
+}
+
+.pen {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pen hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 0px;
+}
+
+.pen h3 {
+    font-size: 1.5em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.descParag {
+  font-size: 0.8em;
+  color: rgba(0,0,0,0.5);
+}
+
+@media screen and (min-width: 768px) {
+  #containerNoBootstrap {
+    display: block;
+  }
+}
